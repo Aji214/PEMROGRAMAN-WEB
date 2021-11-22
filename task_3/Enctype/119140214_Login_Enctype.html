@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+	<title> Tugas Form Pendaftaraan </title>
+<style >
+
+
+.boxform
+{
+	  border: solid black;
+	  width: 350px;
+	  background: whitesmoke;
+	  margin: 100px auto;
+	  padding: 30px 30px;
+	 
+ }
+ .kotak
+ {
+    
+    border: solid black;
+	  width: 350px;
+	  background: whitesmoke;
+	  margin: 100px auto;
+      margin-bottom: 0px;
+	  padding: 30px 30px;
+ }
+ 
+ .head
+ {
+     background-color: black;
+ }
+
+ body
+{
+        background-image: url('https://pusatdiklat.com/wp-content/uploads/2019/10/Manajemen-Diklat-Rumah-Sakit-Jakarta-1.png') ;
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+}
+
+.tombol
+{
+	    background-color: blue;
+  		border: none;
+ 		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		cursor: pointer;
+
+ }
+ .tombol1 
+ {
+ 	border-radius: 12px;
+ }
+
+.tombol:active 
+{
+ 		background-color: blue;
+  		box-shadow: 0 5px black;
+  		transform: translateY(4px);
+}
+
+</style>
+</head>
+
+<body>
+    <div class="head" style="text-align: center;" >PENDAFTARAN PASIEN RS ITERA </div>	
+    <div class="boxform">
+        
+    <h1 > Login </h1>
+
+<form action="119140214_Enctype.php" method="post"enctype="multipart/form-data">
+    
+<div class="box">
+
+            <label for="pasien">Pasien</label><br>
+                <select name="pasien" id="pasien" required="">
+                    <option>Jenis Pasien </option>
+                     <option>Pasien Lama</option>
+                     <option>Pasien Baru</option>
+                </select><br><br>
+    
+    
+                <label>Nama Pasien</label><br>
+                    <input type="text" id="nama"name="nama"><br>
+    
+                </select><br> <br>
+                <label for="pasien">Jenis kelamin</label><br>
+                    <select name="jk" id="jk">
+                     <option>Jenis Kelamin </option>
+                     <option>Laki-Laki</option>
+                     <option>Perempuan</option>
+                     </select><br> <br>
+    
+                 <label> Tempat lahir </label> <br>
+                     <input type="text"id="TL" name="TL"><br>
+                
+                <br>
+                <label> tanggal lahir </label> <br>
+                    <input type="date" id="tgl"name="tgl"><br>
+    
+                <br>
+                <label>Nomor Handphone</label><br>
+                    <input type="text" id="Nomor_HP" name="Nomor_HP"><br>
+                    <br>
+    
+                <label for="poli">Pilih poli klinik</label> <br>
+                    <select name="poli" id="poli">
+                        <option>pilih</option>
+                        <option>Poli Umum</option>
+                        <option>Poli Gigi</option>
+                        <option>Poli Gizi</option>
+                        <option>Poli Anak</option>
+                        
+                    </select><br> <br>
+    
+                <label for="hari">Pilih Hari</label> <br>
+                    <select name="hari" id="hari">
+                        <option>pilih</option>
+                        <option>Senin</option>
+                        <option>Selasa</option>
+                        <option>Rabu</option>
+                        <option>Kamis</option>
+                        <option>Jumat</option>
+                        <option>Sabtu</option>
+                    </select><br>
+                    <br>
+               
+               
+             <label for="foto"><strong>Upload Bukti Pembayaran </strong></label>
+                    <p>*format .jpg / .png / .jpeg (maks. 1mb)</p>
+                    <input type="file" name="foto" id="foto" required="required"> 
+                   
+                    <br>
+                    <br>
+                <input type="submit" name="submit" value="Daftar" class="tombol tombol1" ">
+
+        </form>
+    </div>
+           
+    </div>
+           
+    </body>
+
+</html>
